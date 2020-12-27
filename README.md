@@ -1,5 +1,7 @@
 # timer
 
+[![build status](https://github.com/paasim/timer/workflows/check/badge.svg)](https://github.com/paasim/timer/actions)
+
 A stopwatch program for terminal.
 
 ## Installation
