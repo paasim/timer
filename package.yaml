@@ -1,5 +1,5 @@
 name:                timer
-version:             0.1.0.0
+version:             0.2.0.0
 github:              "paasim/timer"
 license:             BSD3
 author:              "Markus Paasiniemi"
@@ -16,7 +16,7 @@ extra-source-files:
 # To avoid duplicated efforts in documentation and dealing with the
 # complications of embedding Haddock markup inside cabal files, it is
 # common to point users to the README.md file.
-description:         Please see the README on GitHub at <https://github.com/githubuser/timer#readme>
+description:         Please see the README on GitHub at <https://github.com/paasim/timer#readme>
 
 dependencies:
 - base >= 4.7 && < 5
@@ -30,10 +30,8 @@ executables:
     source-dirs:         app
     ghc-options:
     - -threaded
-    - -static
-    - -O2
-    cc-options: -static
-    ld-options: -static -pthread
+    - -rtsopts
+    - -with-rtsopts=-N
     dependencies:
     - timer
 
